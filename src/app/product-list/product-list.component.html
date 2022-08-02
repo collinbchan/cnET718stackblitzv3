@@ -9,6 +9,10 @@
   <p *ngIf="product.description">Description: {{ product.description }}</p>
 
   <button type="button" (click)="share()">Share</button>
+
+  <p *ngIf="product && product.price > 700">
+    <button type="button">Notify Me</button>
+  </p>
 </div>
 
 <!-- 
